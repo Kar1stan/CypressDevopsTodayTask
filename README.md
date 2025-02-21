@@ -18,7 +18,7 @@ https://nodejs.org/es/download/
 Also delete package.lock file before you run your project.
 
 ### Git clone
-This will clone the project, install NPM packages and also the Cypres.io which is required to run the test. No Selenium Server is required.
+This will clone the project, install NPM packages and also the Cypress.io which is required to run the test. No Selenium Server is required.
 ```
 $ git clone https://github.com/CypressDevopsTodayTask.git
 $ cd CypressDevopsTodayTask
