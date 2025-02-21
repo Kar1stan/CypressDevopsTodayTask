@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "cypress:open": "cypress run --headed --browser chrome"
+    "cypress:open": "cypress run --headless --browser chrome"
   },
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
