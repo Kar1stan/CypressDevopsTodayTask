@@ -10,9 +10,10 @@ export default defineConfig({
     },
     env: {
       allureReuseAfterSpec: true,
-      track_name: process.env.TRACK_NAME
+      track_name: process.env.TRACK_NAME,
+      url: process.env.URL
     },
-    baseUrl: process.env.URL,
+    baseUrl: Cypress.env('url'),
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
     chromeWebSecurity: false,
   },
