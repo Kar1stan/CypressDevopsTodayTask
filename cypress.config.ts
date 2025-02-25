@@ -1,5 +1,6 @@
 import { defineConfig } from 'cypress'; 
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+require('dotenv').config()
 
 export default defineConfig({
   e2e: {
@@ -9,10 +10,9 @@ export default defineConfig({
     },
     env: {
       allureReuseAfterSpec: true,
-      track_name: 'Winter Winds',
-      products_url: '/products'
+      track_name: process.env.TRACK_NAME
     },
-    baseUrl: 'https://vite-react-alpha-lemon.vercel.app/',
+    baseUrl: process.env.URL,
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
     chromeWebSecurity: false,
   },
