@@ -11,6 +11,6 @@
   "dependencies": {
     "@shelex/cypress-allure-plugin": "^2.34.0",
     "allure-commandline": "^2.20.1",
-    "dotenv": "^16.4.7"
+    "dotenv":"^16.4.7"
   }
 }
