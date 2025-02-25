@@ -13,7 +13,7 @@ export default defineConfig({
       track_name: process.env.TRACK_NAME,
       url: process.env.URL
     },
-    baseUrl: Cypress.env('url'),
+    baseUrl: 'https://vite-react-alpha-lemon.vercel.app/',
     specPattern: '**/*.spec.{js,jsx,ts,tsx}',
     chromeWebSecurity: false,
   },
